@@ -1,0 +1,112 @@
+#find-icon img{
+    display:-webkit-inline-box;
+    padding-top: 20px;
+    max-height: 20%;
+    max-width: 20%;
+   text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.find-wide {
+    float: left;
+	width: 34%;
+	margin: 0.5% 0;
+	margin-bottom: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.find-wide .find-text-wide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.find-text-wide span{
+    font-family:"roboto";
+    font-size: 0.9em;
+    opacity:0.5;
+}
+
+.find-text-wide img{
+    max-width: 2px;
+    max-height: 2px;
+}
+
+.find-wide img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.find-wide:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.find-wide h2 {
+    font-family:"Open Sans";
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+  overflow: hidden;
+  padding: 0.2em 0;
+  background-color: transparent;
+}
+
+.find-wide h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.find-wide:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.find-wide a, .find-wide p {
+  color: #FFF;
+  opacity: 0.2;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.find-wide:hover a, .find-wide:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
